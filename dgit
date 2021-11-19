@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+docker run \
+  --rm -it \
+  --volume="${PWD}:/home/developer/app:Z" \
+  --volume="${HOME}/.gnupg:/home/developer/.gnupg:Z" \
+  --volume="${SSH_AUTH_SOCK}:/ssh-agent" \
+  --volume="${HOME}/.ssh/known_hosts:/home/developer/.ssh/known_hosts" \
+  -e SSH_AUTH_SOCK=/ssh-agent \
+  git:dev "$@"
