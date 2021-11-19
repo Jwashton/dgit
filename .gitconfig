@@ -1,0 +1,8 @@
+[user]
+	email = William@AshtonFam.org
+	name = William Ashton
+	signingkey = 1B23A4E3C3607B1C
+[core]
+	excludesfile = /home/jwashton/.gitignore.global
+[init]
+	defaultBranch = main

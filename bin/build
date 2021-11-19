@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+function build() {
+  docker build \
+    -f Containerfile \
+    --build-arg USER_ID=$(id -u) \
+    --build-arg GROUP_ID=$(id -g) \
+    -t git:dev \
+    .
+}
+
+build
