@@ -18,7 +18,7 @@ RUN mkdir ${HOME}/app \
 WORKDIR /home/developer/app
 
 COPY --chown=developer ./entrypoint.sh /home/developer/
-COPY --chown=developer ./.gitconfig /home/developer/
-COPY --chown=developer ./.gitignore.global /home/developer/
+COPY --chown=developer ./gitconfig /home/developer/.gitconfig
+COPY --chown=developer ./gitignore.global /home/developer/.gitignore.global
 
 ENTRYPOINT ["/home/developer/entrypoint.sh"]
