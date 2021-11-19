@@ -6,3 +6,7 @@
 	excludesfile = /home/jwashton/.gitignore.global
 [init]
 	defaultBranch = main
+[gpg]
+	program = gpg2
+[commit]
+  gpgsign = true
