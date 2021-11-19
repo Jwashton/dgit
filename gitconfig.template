@@ -1,8 +1,4 @@
-[user]
-	signingkey = C73383FA5E1BC6DFA17036271B23A4E3C3607B1C
 [core]
 	excludesfile = /home/developer/.gitignore.global
 [init]
 	defaultBranch = main
-[commit]
-  gpgsign = true
