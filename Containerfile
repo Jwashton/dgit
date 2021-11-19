@@ -11,7 +11,9 @@ RUN apk add --no-cache git~=2.32 gnupg~=2.2.31 openssh-client-default~=8.6 \
 
 USER developer
 
-RUN mkdir /home/developer/app
+RUN mkdir ${HOME}/app \
+  && mkdir ${HOME}/.ssh \
+  && chmod 700 ${HOME}/.ssh
 
 WORKDIR /home/developer/app
 
