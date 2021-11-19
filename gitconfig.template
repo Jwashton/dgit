@@ -1,12 +1,8 @@
 [user]
-	email = William@AshtonFam.org
-	name = William Ashton
-	signingkey = 1B23A4E3C3607B1C
+	signingkey = C73383FA5E1BC6DFA17036271B23A4E3C3607B1C
 [core]
-	excludesfile = /home/jwashton/.gitignore.global
+	excludesfile = /home/developer/.gitignore.global
 [init]
 	defaultBranch = main
-[gpg]
-	program = gpg2
 [commit]
   gpgsign = true

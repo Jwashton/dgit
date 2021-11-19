@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+function init_config() {
+  cp gitignore.template gitignore.global
+  cp gitconfig.template gitconfig
+}
+
+function set_name() {
+  read -p "What's your name? " git_name
+  git config --file gitconfig user.name ${git_name}
+}
+
+function set_email() {
+  read -p "What's your email? " git_email
+  git config --file gitconfig user.email ${git_email}
+}
+
+# function set_signing_key() {
+#   TODO: Some magic
+#   gpg --with-colons something?
+# }
+
+init_config
+set_name
+set_email

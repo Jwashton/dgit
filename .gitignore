@@ -1,0 +1,8 @@
+#   This file is for the dgit project. It does not get copied
+# into the dgit container. For the global ignore file that
+# gets copied into the container see `./gitignore.global`.
+#   If that file does not exist, run `bin/setup` to generate
+# it.
+
+gitignore.global
+gitconfig
