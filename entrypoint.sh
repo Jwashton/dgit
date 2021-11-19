@@ -3,4 +3,9 @@
 GPG_TTY="$(tty)"
 export GPG_TTY
 
-exec git "$@"
+if [ "$1" = "ash" ]; then
+  shift
+  exec ash "$@"
+else
+  exec git "$@"
+fi
